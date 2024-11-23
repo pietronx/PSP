@@ -1,3 +1,5 @@
+// Programa ejemplo de un examen de 1º de DAM
+
 package ejemplos;
 import java.util.*;
 public class ex_DAM1 {
