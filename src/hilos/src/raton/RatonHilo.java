@@ -36,8 +36,5 @@ public class RatonHilo extends Thread{
         mike.start();
         jerry.start();
 
-
     }
 }
-
-

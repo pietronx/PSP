@@ -25,12 +25,11 @@ public class Ejercicio_01 {
 
         System.out.println("Ingresa tus apellidos");
         apellidos = sc.nextLine();
-
         System.out.println("Ingresa tu edad");
         edad = sc.nextInt();
-
+        sc.nextLine(); // Solucionar el problema entre nextInt y nextLine
         System.out.println("Ingresa tu usuario");
-        usuario = sc.next();
+        usuario = sc.nextLine();
 
         System.out.println("Ingresa la cuota a pagar");
         cuota = sc.nextDouble();

@@ -18,16 +18,16 @@ public class Ejercicio_02 {
 
         System.out.println("Ingresa tu edad");
         edad = sc.nextInt();
-
+        sc.nextLine();
         //  Cambiamos todos los sc.nextLine() por sc.next()
         System.out.println("Ingresa tu nombre");
-        nombre = sc.next();
+        nombre = sc.nextLine();
 
         System.out.println("Ingresa tus apellidos");
-        apellidos = sc.next();
+        apellidos = sc.nextLine();
 
         System.out.println("Ingresa tu usuario");
-        usuario = sc.next();
+        usuario = sc.nextLine();
 
         System.out.println("Ingresa la cuota a pagar");
         cuota = sc.nextDouble();
