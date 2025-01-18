@@ -1,3 +1,5 @@
+package CarreraCaballos;
+
 import java.util.Observable;
 
 public class Caballo extends Observable implements Runnable {
@@ -20,7 +22,7 @@ public class Caballo extends Observable implements Runnable {
         try {
             while (porcentaje < 100) {
                 numAleatorio = generaNumeroAleatorio(1, 15);
-                System.out.println("Caballo " + nombre + " ha aumentado en " + numAleatorio);
+                System.out.println("CarreraCaballos.Caballo " + nombre + " ha aumentado en " + numAleatorio);
                 porcentaje += numAleatorio;
  
                 this.setChanged();

@@ -1,4 +1,4 @@
-/*
+package CarreraCaballos;/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -42,19 +42,19 @@ public class FrmCarrera extends javax.swing.JFrame implements Observer {
  
         pg1.setStringPainted(true);
  
-        jLabel1.setText("Caballo 1");
+        jLabel1.setText("CarreraCaballos.Caballo 1");
  
         pg2.setStringPainted(true);
  
-        jLabel2.setText("Caballo 2");
+        jLabel2.setText("CarreraCaballos.Caballo 2");
  
         pg3.setStringPainted(true);
  
-        jLabel3.setText("Caballo 3");
+        jLabel3.setText("CarreraCaballos.Caballo 3");
  
         pg4.setStringPainted(true);
  
-        jLabel4.setText("Caballo 4");
+        jLabel4.setText("CarreraCaballos.Caballo 4");
  
         btnIniciar.setText("Iniciar");
         btnIniciar.addActionListener(new java.awt.event.ActionListener() {
@@ -238,7 +238,7 @@ public class FrmCarrera extends javax.swing.JFrame implements Observer {
         if(porcentaje>=100){
            terminar();
            this.btnIniciar.setEnabled(true);
-           this.lblGanador.setText("Caballo "+c.getNombre());
+           this.lblGanador.setText("CarreraCaballos.Caballo "+c.getNombre());
         }
          
          
