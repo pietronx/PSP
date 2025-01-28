@@ -13,9 +13,9 @@ public class hilosIndependientes {
         h1.start();
 
         // Iniciar un hilo con Runnable (hay que crearlo desde aquí)
-        //hiloImpar hilo = new hiloImpar();
-       // Thread h2 = new Thread(hilo);
-      //  h2.start();
-      //  h2.join();
+        hiloImpar hilo = new hiloImpar();
+        Thread h2 = new Thread(hilo);
+        h2.start();
+        h2.join();
     }
 }

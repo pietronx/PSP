@@ -1,4 +1,4 @@
-package E06_hilosParesImpares;
+package tareasHilos.E06_hilosParesImpares;
 
 public class hiloImpar implements Runnable {
 

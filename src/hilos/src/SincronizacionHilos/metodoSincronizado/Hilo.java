@@ -1,9 +1,9 @@
 package SincronizacionHilos.metodoSincronizado;
 
 public class Hilo extends Thread {
-	Contador contador;
+	Contadorr contador;
 
-	public Hilo(Contador _contador) {
+	public Hilo(Contadorr _contador) {
 		this.contador = _contador;
 	}
 

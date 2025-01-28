@@ -7,7 +7,7 @@ public class MonitorSincronizado {
 		//try {
 			long ini = new Date().getTime();
 			
-			Contador contador = new Contador();
+			Contadorr contador = new Contadorr();
 			
 			Hilo hilo = new Hilo(contador);
 			Hilo hilo2 = new Hilo(contador);
