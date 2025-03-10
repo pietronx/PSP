@@ -10,8 +10,19 @@ y el consumidor no puede decrementarlo si ya está en su valor mínimo.
 • El programa imprimirá el valor del contador y la acción realizada (incremento o decremento) en cada operación.
  */
 public class main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
-        //productor p1 = new productor();
+        cont cont = new cont(0);
+
+        productor p1 = new productor(cont);
+
+        consumidor p2 = new consumidor(cont);
+        Thread t2 = new Thread(p2);
+
+        p1.start();
+        p1.join();
+
+        t2.start();
+        t2.join();
     }
 }

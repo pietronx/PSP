@@ -2,7 +2,7 @@ package ejemplos;// Ejemplo lanzador de procesos
 //Programa que abra la calculadora mediante la ruta del sistema (ProcessBuilder)
 
 public class ejemplo3 {
-	// TODO Auto-generated method stub
+
 	public void ejecutar(String ruta) {
 		ProcessBuilder pb;
 		try {

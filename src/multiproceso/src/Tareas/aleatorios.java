@@ -11,16 +11,18 @@ hijo que le envíe un número aleatorio, lo leerá y lo imprimirá en pantalla.
 procederá a finalizar su ejecución.*/
 
 package Tareas;
+
 import java.util.Random;
+
 public class aleatorios {
-	
-	public static void main(String[] args) {
-		
-	       Random random = new Random();
-	       random.nextInt(); // Números aleatorios entre 0 y 10 
-	       
-	       System.out.println("El numero aleatorio es: " + new Random().nextInt(11));
-	       
-	        }	    
-	}
+
+    public static void main(String[] args) {
+
+        Random random = new Random();
+        random.nextInt(); // Números aleatorios entre 0 y 10
+
+        System.out.println("El numero aleatorio es: " + new Random().nextInt(11));
+
+    }
+}
 

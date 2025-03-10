@@ -6,7 +6,6 @@ public class TresLetras {
 	public static void main(String[] args) {
 		
 		//Declaramos las variables
-		
 		String nombre;
 		String apellid1;
 		String apellid2;

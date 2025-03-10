@@ -1,6 +1,8 @@
 package SincronizacionHilos.ejercicios01.EjDos;
 
-public class consumidor extends Thread {
+import static java.lang.Thread.sleep;
+
+public class consumidor implements Runnable {
     private final cont c;
 
     public consumidor(SincronizacionHilos.ejercicios01.EjDos.cont c) {
@@ -9,17 +11,15 @@ public class consumidor extends Thread {
 
     @Override
     public void run() {
-        super.run();
-
+        // Haz esto
         do {
-            if(c.getContador() > 10){
-                c.decrementar();
-                try {
-                    sleep(10);
-                } catch (InterruptedException e){}
-                System.out.println("Contador vale " + c.getContador());
-            }
+            c.decrementar();
+            try {
+                sleep(10);
+            } catch (InterruptedException e) { e.printStackTrace(); }
+            System.out.println("Consumidor decrementa el contador:" + c.getContador());
         }
+        // Mientras se cumpla esto
         while (c.getContador() > 0);
     }
 }

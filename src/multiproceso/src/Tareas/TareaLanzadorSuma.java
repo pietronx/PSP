@@ -1,11 +1,15 @@
 package Tareas;
-import java.io.*;
-import java.util.*;
-public class TareaLanzadorSuma {
-	static java.util.List<String> comando;
-	public static void main(String[] args) {
 
-		if (args.length < 1) {
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class TareaLanzadorSuma {
+    static java.util.List<String> comando;
+
+    public static void main(String[] args) {
+
+        if (args.length < 1) {
             System.err.println("Debes pasar el número de veces que se hará la suma.");
             System.exit(1);
         }

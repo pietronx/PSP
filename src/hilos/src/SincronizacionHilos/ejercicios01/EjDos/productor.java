@@ -10,16 +10,15 @@ public class productor extends Thread {
     @Override
     public void run() {
         super.run();
-
+        // Haz esto
         do {
-            if(c.getContador() < 10){
-                c.incrementar();
-                try {
-                    sleep(10);
-                } catch (InterruptedException e){}
-                System.out.println("Contador vale " + c.getContador());
-            }
+            c.incrementar();
+            try {
+                sleep(10);
+            } catch (InterruptedException e) { e.printStackTrace(); }
+            System.out.println("Productor incrementa el contador: " + c.getContador());
         }
+        // Mientras se cumpla esto
         while (c.getContador() < 10);
     }
 }

@@ -15,13 +15,13 @@ public class Persona {
         this.email = email;
     }
 
-    public Persona(String nombre, String email)
-    {
+    // Constructor 2
+    public Persona(String nombre, String email) {
         this.nombre = nombre;
         this.email = email;
     }
 
-    // Constructor 2
+    // Constructor 3
     public Persona(String nombre, int edad, String email, Direccion domicilio) {
         this(nombre, edad, email);
         this.domicilio = domicilio;
@@ -59,14 +59,12 @@ public class Persona {
         this.domicilio = domicilio;
     }
 
-    public int cumplirAnhos()
-    {
-        setEdad(getEdad()+1); //edad++;
+    public int cumplirAnhos() {
+        setEdad(getEdad() + 1); //edad++;
         return edad;
     }
 
-    public void mostrarInfo()
-    {
+    public void mostrarInfo() {
         System.out.println(nombre + " " + edad + " " + email + " ");
     }
 

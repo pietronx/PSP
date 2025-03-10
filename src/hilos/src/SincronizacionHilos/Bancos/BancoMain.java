@@ -27,7 +27,7 @@ public class BancoMain {
         Cuenta bbva = new Cuenta(1000.0);
 
         // Creamos los clientes, le damos nombre, y hacemos que retiren de la cuenta X cantidad de dinero
-        Cliente cliente1 = new Cliente("Laura", bbva, 55);
+        Cliente cliente1 = new Cliente("Fernanda", bbva, 55);
         Cliente cliente2 = new Cliente("Pepa", bbva, 25);
 
         Thread hilo1 = new Thread(cliente1);

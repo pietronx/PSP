@@ -1,6 +1,6 @@
 package Repaso;
 import java.io.*;
-public class FicherosBRMayusculas
+public class Ficheros_bw_br_Mayus
 {
 	public static void main(String[] args) 
 	{

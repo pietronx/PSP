@@ -1,6 +1,6 @@
 package Repaso;
 import java.io.*;
-public class FicherosConBufferedReader 
+public class Ficheros_bw_br
 {
 	public static void main(String[] args) 
 	{
